@@ -43,7 +43,7 @@ import Layout from '../../../src/modules/shared/layouts/index.astro'
   }
 
   #LeftContainerIllustration {
-    width: 50%;
+    flex: 1;
     height: 100%;
     background-color: #F5F5F5;
     display: flex;
@@ -55,7 +55,17 @@ import Layout from '../../../src/modules/shared/layouts/index.astro'
     background-size: 80%;
   }
 
+  /* hide the left container on mobile */
+  @media (max-width: 900px) {
+    #LeftContainerIllustration {
+      display: none;
+    }
+  }
+
+  
+
   #RightContainerForm {
+    flex: 1;
     width: 50%;
     height: 100%;
     display: flex;
@@ -63,6 +73,7 @@ import Layout from '../../../src/modules/shared/layouts/index.astro'
     align-items: center;
     flex-direction: column;
     gap: 20px;
+    padding: 1rem;
   }
 
   #greeting {

@@ -8,9 +8,13 @@
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} >
     <title>Geny Files 📑</title>
+    <!-- import Caveat google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>Geny Files 📑 🚀</h1>
+    <h1 id="title">Geny Files 📑 🚀</h1>
     <section id="introduction">
       <h2>👋 Welcome </h2>
       <p>
@@ -37,11 +41,13 @@
     padding: 0;
   }
 
-  h1 {
+  h1#title {
     background-color: #000;
     color: #fff;
     margin: 0;
     padding: 1rem;
+    /*use coursive font from google fonts*/
+    font-family: 'Caveat', cursive;
   }
 
   h2 {

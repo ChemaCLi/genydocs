@@ -6,13 +6,16 @@ import Layout from '../../../src/modules/shared/layouts/index.astro'
     <div id="LeftContainerIllustration">
     </div>
     <div id="RightContainerForm">
+      <h2 id="greeting">Nice to see you here! 😉</h2>
+
       <section id="introduction">
         <div>
-          <h2>Sign in </h2>
-          <form>
+          <h1>Sign in </h1>
+          <form id="SignInForm">
             <input class="Input" type="text" placeholder="Email" />
             <input class="Input" type="password" placeholder="Password" />
             <button class="Button" type="submit">Sign in</button>
+            <a href="/password-recovery">Forgot my password</a>
           </form>
         </div>
         <div>
@@ -58,6 +61,20 @@ import Layout from '../../../src/modules/shared/layouts/index.astro'
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #greeting {
+    font-family: 'Caveat', cursive;
+    font-size: 2rem;
+  }
+
+  #SignInForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
 
   input.Input {
@@ -79,6 +96,7 @@ import Layout from '../../../src/modules/shared/layouts/index.astro'
     padding-left: 10px;
     color: white;
     background-color: var(--color-primary-dark);
+    transition: all 0.1s ease-in-out;
   }
 
   .Button:hover {

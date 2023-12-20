@@ -9,13 +9,13 @@ export const TemplatesLibraryPage = () => {
     <div id="app-main-container">
       <nav id="toolbar">
         <div id="left-toolbar-items">
-          <div>User Name</div>
-          <h1>Geny Files</h1>
+          <div id="user">User Name</div>
+          <h1 id="title">Geny Files 📑 🚀</h1>
         </div>
         <div id="toolbar-tools">
-          <button>Upload new</button>
-          <button>Download examples</button>
-          <button>Trash</button>
+          <button class="ghost-button">Upload new</button>
+          <button class="ghost-button">Download examples</button>
+          <button class="ghost-button">Trash</button>
         </div>
       </nav>
       <main class="content">

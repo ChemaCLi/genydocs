@@ -1,10 +1,8 @@
 ---
-import { ViewTransitions } from 'astro:transitions';
 
 ---
 <html lang="en">
   <head>
-    <ViewTransitions transition:animate="slide" />
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
@@ -13,27 +11,25 @@ import { ViewTransitions } from 'astro:transitions';
     <!-- import Caveat google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Noto+Sans&display=swap" rel="stylesheet">
   </head>
   <body>
-    <nav id="navbar">
-      <a id="title" href="/">Geny Files 📑 🚀</a>
-    </nav>
     <slot></slot>
   </body>
 </html>
 
 
 <style>
-  html {
-    font-size: 16px;
-  }
-
   /* declare the color variables */
   :root {
     --color-primary: #49963f;
     --color-primary-dark: #000000;
     --color-white: #fff;
+  }
+
+  html {
+    font-size: 16px;
   }
 
   body {

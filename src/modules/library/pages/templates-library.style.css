@@ -31,6 +31,8 @@
 }
 
 .content {
+  margin: auto;
+  max-width: 1380px;
   min-height: 30000px;
   padding: 1rem;
 }

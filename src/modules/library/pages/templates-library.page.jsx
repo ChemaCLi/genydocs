@@ -35,10 +35,10 @@ export const TemplatesLibraryPage = () => {
                   2023 Generation ISC
                 </div>
                 <div class="item-actions">
-                  <button>Generator</button>
-                  <button>Dev options</button>
-                  <button>Download</button>
-                  <button>Delete</button>
+                  <button class="button default">📜 Generator</button>
+                  <button class="button default">💻 Dev options</button>
+                  <button class="button default">📦 Download</button>
+                  <button class="button default">❌ Delete</button>
                 </div>
               </div>
             </div>

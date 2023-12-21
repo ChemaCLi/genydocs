@@ -3,7 +3,7 @@ import './templates-library.style.css';
 
 export const TemplatesLibraryPage = () => {
 
-  const MOCK_ITEMS = [{}, {}, {}, {}, {}, {}, {}, {}]
+  const MOCK_ITEMS = [{ title: 'DC' }, { title: 'A' }, {}, {}, {}, {}, {}, {}]
 
   return (
     <div id="app-main-container">
@@ -24,19 +24,20 @@ export const TemplatesLibraryPage = () => {
             <div class="template-item" key={idx}>
               <div class="item-header">
                 <div class="badge">
-                  DC
+                  {item.title}
                 </div>
-                <div class="item-title">
-                  Diplomas and Certificates
-                </div>
+                <a class="item-title" href="https://google.com">
+                  Diplomas and Certificates asd asd asd asd asd asd asd asd asd asd asd asd
+                </a>
               </div>
               <div class="item-footer">
                 <div class="item-description">
-                  Endpoint
+                  2023 Generation ISC
                 </div>
                 <div class="item-actions">
+                  <button>Generator</button>
+                  <button>Dev options</button>
                   <button>Download</button>
-                  <button>Payload example</button>
                   <button>Delete</button>
                 </div>
               </div>

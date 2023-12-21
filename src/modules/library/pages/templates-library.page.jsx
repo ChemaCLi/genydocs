@@ -26,14 +26,19 @@ export const TemplatesLibraryPage = () => {
                 <div class="badge">
                   {item.title}
                 </div>
-                <a class="item-title" href="https://google.com">
-                  Diplomas and Certificates asd asd asd asd asd asd asd asd asd asd asd asd
-                </a>
+                <div class="item-header-title-container">
+                  <a class="item-title" href="https://google.com">
+                    Diplomas and Certificates asd asd asd asd asd asd asd asd asd asd asd asd
+                  </a>
+                  <div>
+                    <div class="item-description">
+                      2023 Generation ISC asd asd asd asd asd asd dsada sd dsad as
+                    </div>
+                    <span class="item-metadata">10/08/2024</span>
+                  </div>
+                </div>
               </div>
               <div class="item-footer">
-                <div class="item-description">
-                  2023 Generation ISC
-                </div>
                 <div class="item-actions">
                   <button class="button default">📜 Generator</button>
                   <button class="button default">💻 Dev options</button>

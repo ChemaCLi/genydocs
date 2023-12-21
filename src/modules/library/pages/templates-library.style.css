@@ -65,10 +65,11 @@
 .item-header {
   display: flex;
   gap: 1rem;
+  overflow: hidden; /* Add this line */
 }
 
 .item-header > .badge {
-  background-color: #000000;
+  background-color: #424242;
   color: #ffffff;
   border-radius: 4px;
   font-size: 1rem;
@@ -81,10 +82,27 @@
   align-items: center;
 }
 
-.item-header > .item-title {
+.item-header-title-container {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.item-description {
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.item-metadata {
+  font-size: 0.8rem;
+  color: #303030;
+}
+
+.item-header > .item-header-title-container > .item-title {
   font-size: 1rem;
   font-weight: 600;
-  color: #000000;
+  color: rgb(70, 70, 70);
   text-decoration: none;
   text-wrap: nowrap;
   overflow: hidden;
@@ -98,8 +116,6 @@
   gap: 0.5rem;
   flex-wrap: wrap;
 }
-
-
 
 /* buttons */
 
